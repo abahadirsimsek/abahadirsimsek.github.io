@@ -3,65 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Abahadır Şimşek — tarayıcıda çalışan akademik Python araçları.">
-  <title>Akademik Araçlar | Abahadır Şimşek</title>
+  <meta name="description" content="Ahmet Bahadır Şimşek — tarayıcıda çalışan akademik Python araçları.">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Akademik Araçlar | Ahmet Bahadır Şimşek</title>
   <link rel="stylesheet" href="assets/style.css">
-
-  <!-- Python yalnızca bu sayfada yüklenir. -->
   <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
   <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <a class="skip-link" href="#main" data-tr="İçeriğe geç" data-en="Skip to content">İçeriğe geç</a>
 
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-name">Abahadır Şimşek</span>
-        <span class="brand-role">Akademik Araçlar</span>
+    <div class="shell header-inner">
+      <a class="identity" href="index.html">
+        <span class="identity-name">Ahmet Bahadır Şimşek</span>
+        <span class="identity-role" data-tr="Akademik araçlar" data-en="Academic tools">Akademik araçlar</span>
       </a>
       <nav class="nav" aria-label="Araçlar menüsü">
-        <a href="index.html">Ana sayfa</a>
-        <a href="#betimsel">Betimsel istatistik</a>
+        <a href="index.html" data-tr="Ana sayfa" data-en="Home">Ana sayfa</a>
+        <a href="publications.html" data-tr="Yayınlar" data-en="Publications">Yayınlar</a>
       </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+        <span class="lang-current">TR</span><span aria-hidden="true"> / </span><span class="lang-other">EN</span>
+      </button>
     </div>
   </header>
 
-  <main id="main" class="section">
-    <div class="container tool-shell">
-      <p class="section-kicker">Python · Tarayıcı içi</p>
-      <h1 style="font-size:clamp(2.3rem,5vw,4rem)">Akademik Araçlar</h1>
-      <p class="lead" style="margin-bottom:34px">
-        Bu sayfadaki hesaplama tarayıcınızda çalışır. Girdiğiniz veri bir sunucuya gönderilmez.
-      </p>
-
-      <section id="betimsel" class="tool-panel">
-        <h2 style="font-size:1.75rem">Temel betimsel istatistik</h2>
-        <p>
-          Sayıları virgül, noktalı virgül, boşluk veya satır sonu ile ayırabilirsiniz.
-          Örnek: <code>12, 15, 18, 21, 22</code>
+  <main id="main">
+    <section class="page-hero compact">
+      <div class="shell">
+        <p class="eyebrow">Python · PyScript</p>
+        <h1 data-tr="Akademik araçlar" data-en="Academic tools">Akademik araçlar</h1>
+        <p class="lead narrow"
+           data-tr="Hesaplamalar doğrudan tarayıcınızda çalışır. Girdiğiniz veri bu site tarafından bir sunucuya gönderilmez."
+           data-en="Calculations run directly in your browser. Data entered here is not sent by this site to a server.">
+          Hesaplamalar doğrudan tarayıcınızda çalışır. Girdiğiniz veri bu site tarafından bir sunucuya gönderilmez.
         </p>
+      </div>
+    </section>
 
-        <label class="field-label" for="data-input">Veri</label>
-        <textarea id="data-input" placeholder="12, 15, 18, 21, 22"></textarea>
+    <section class="section">
+      <div class="shell tool-shell">
+        <article class="tool-panel" id="betimsel">
+          <div class="tool-heading">
+            <div>
+              <span class="tool-tag" data-tr="Araç 01" data-en="Tool 01">Araç 01</span>
+              <h2 data-tr="Temel betimsel istatistik" data-en="Basic descriptive statistics">Temel betimsel istatistik</h2>
+            </div>
+            <span class="python-badge">Python</span>
+          </div>
 
-        <div class="tool-actions">
-          <button id="calculate" class="button primary" type="button">Hesapla</button>
-          <button id="example" class="button" type="button">Örnek veri</button>
-          <button id="clear" class="button" type="button">Temizle</button>
-        </div>
+          <p data-tr="Sayıları virgül, noktalı virgül, boşluk veya satır sonuyla ayırın. Ondalık ayırıcı olarak nokta kullanın."
+             data-en="Separate values with commas, semicolons, spaces, or line breaks. Use a period as the decimal separator.">
+            Sayıları virgül, noktalı virgül, boşluk veya satır sonuyla ayırın. Ondalık ayırıcı olarak nokta kullanın.
+          </p>
 
-        <div id="result" class="result" aria-live="polite">
-          Sonuçlar burada görünecek.
-        </div>
-      </section>
+          <label class="field-label" for="data-input" data-tr="Veri" data-en="Data">Veri</label>
+          <textarea id="data-input" placeholder="12, 15, 18, 21, 22"></textarea>
 
-      <p style="margin-top:20px;color:var(--muted);font-size:.9rem">
-        Not: Bu araç öğretim ve hızlı kontrol amaçlıdır. Araştırma raporlamasında analiz varsayımları ayrıca değerlendirilmelidir.
-      </p>
-    </div>
+          <div class="tool-actions">
+            <button id="calculate" class="button primary" type="button" data-tr="Hesapla" data-en="Calculate">Hesapla</button>
+            <button id="example" class="button ghost" type="button" data-tr="Örnek veri" data-en="Example data">Örnek veri</button>
+            <button id="clear" class="button ghost" type="button" data-tr="Temizle" data-en="Clear">Temizle</button>
+          </div>
+
+          <div id="result" class="result" aria-live="polite" data-tr="Sonuçlar burada görünecek." data-en="Results will appear here.">
+            Sonuçlar burada görünecek.
+          </div>
+        </article>
+
+        <p class="bibliography-note"
+           data-tr="Araç öğretim ve hızlı kontrol amaçlıdır. Araştırma raporlamasında uygun istatistiksel varsayımlar ayrıca değerlendirilmelidir."
+           data-en="This tool is intended for teaching and quick checks. Appropriate statistical assumptions should be assessed separately for research reporting.">
+          Araç öğretim ve hızlı kontrol amaçlıdır. Araştırma raporlamasında uygun istatistiksel varsayımlar ayrıca değerlendirilmelidir.
+        </p>
+      </div>
+    </section>
 
     <script type="py" src="./tools.py"></script>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© <span id="year"></span> Ahmet Bahadır Şimşek</span>
+      <span data-tr="Python tarayıcı içinde çalışır." data-en="Python runs in the browser.">Python tarayıcı içinde çalışır.</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

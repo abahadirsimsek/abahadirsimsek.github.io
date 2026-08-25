@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ahmet Bahadır Şimşek — yayınlar, makaleler ve kitap bölümleri.">
+  <meta name="theme-color" content="#f5f3ee">
+  <title>Yayınlar | Ahmet Bahadır Şimşek</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-tr="İçeriğe geç" data-en="Skip to content">İçeriğe geç</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="identity" href="index.html">
+        <span class="identity-name">Ahmet Bahadır Şimşek</span>
+        <span class="identity-role" data-tr="Yayınlar" data-en="Publications">Yayınlar</span>
+      </a>
+      <nav class="nav" aria-label="Yayınlar menüsü">
+        <a href="index.html" data-tr="Ana sayfa" data-en="Home">Ana sayfa</a>
+        <a href="index.html#arastirma" data-tr="Araştırma" data-en="Research">Araştırma</a>
+        <a href="tools.html" data-tr="Araçlar" data-en="Tools">Araçlar</a>
+        <a href="index.html#iletisim" data-tr="İletişim" data-en="Contact">İletişim</a>
+      </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+        <span class="lang-current">TR</span><span aria-hidden="true"> / </span><span class="lang-other">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="shell">
+        <p class="eyebrow" data-tr="Bibliyografya" data-en="Bibliography">Bibliyografya</p>
+        <h1 data-tr="Yayınlar" data-en="Publications">Yayınlar</h1>
+        <p class="lead narrow"
+           data-tr="Yayınlar yıl ve tür temelinde düzenlenmiştir. Makale veya bölüm kartının üzerine geldiğinizde kısa özet açılır; dokunmatik ekranda “Özeti göster” düğmesini kullanabilirsiniz."
+           data-en="Publications are organised by year and type. Hover over an article or chapter card to reveal a short summary; on touch devices use the “Show summary” button.">
+          Yayınlar yıl ve tür temelinde düzenlenmiştir. Makale veya bölüm kartının üzerine geldiğinizde kısa özet açılır; dokunmatik ekranda “Özeti göster” düğmesini kullanabilirsiniz.
+        </p>
+      </div>
+    </section>
+
+    <section class="section publications-section">
+      <div class="shell">
+        <div class="publication-toolbar" aria-label="Publication filters">
+          <label class="search-field">
+            <span data-tr="Yayınlarda ara" data-en="Search publications">Yayınlarda ara</span>
+            <input id="pubSearch" type="search"
+                   data-ph-tr="Başlık, yazar, dergi veya yıl…"
+                   data-ph-en="Title, author, journal, or year…"
+                   placeholder="Başlık, yazar, dergi veya yıl…">
+          </label>
+
+          <div class="filter-group" role="group" aria-label="Publication type">
+            <button class="filter-button active" type="button" data-pub-filter="all" data-tr="Tümü" data-en="All">Tümü</button>
+            <button class="filter-button" type="button" data-pub-filter="article" data-tr="Makaleler" data-en="Articles">Makaleler</button>
+            <button class="filter-button" type="button" data-pub-filter="chapter" data-tr="Kitap bölümleri" data-en="Book chapters">Kitap bölümleri</button>
+          </div>
+
+          <p class="result-count" id="publicationCount"></p>
+        </div>
+
+        <div id="publicationList" class="publication-list"></div>
+
+        <p class="bibliography-note"
+           data-tr="Not: Kısa özetler, erişilebilir yayın özetleri ve bibliyografik kayıtlardan yeniden yazılmış açıklamalardır; özgün makale özetlerinin tam metni değildir."
+           data-en="Note: Short summaries are rewritten from accessible abstracts and bibliographic records; they are not reproductions of the original abstracts.">
+          Not: Kısa özetler, erişilebilir yayın özetleri ve bibliyografik kayıtlardan yeniden yazılmış açıklamalardır; özgün makale özetlerinin tam metni değildir.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>© <span id="year"></span> Ahmet Bahadır Şimşek</span>
+      <a href="https://orcid.org/0000-0002-7276-2376" target="_blank" rel="me noopener">ORCID 0000-0002-7276-2376</a>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script src="assets/publications.js"></script>
+</body>
+</html>
