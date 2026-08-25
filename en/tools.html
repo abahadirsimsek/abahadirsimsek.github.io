@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ahmet Bahadır Şimşek — academic Python tools running in the browser on GitHub Pages.">
+<meta name="theme-color" content="#f5f3ee">
+<title>Academic Tools | Ahmet Bahadır Şimşek</title>
+<link rel="canonical" href="https://abahadirsimsek.github.io/en/tools.html">
+<link rel="alternate" hreflang="tr" href="https://abahadirsimsek.github.io/tools.html">
+<link rel="alternate" hreflang="en" href="https://abahadirsimsek.github.io/en/tools.html">
+<link rel="alternate" hreflang="x-default" href="https://abahadirsimsek.github.io/tools.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ahmet Bahadır Şimşek">
+<meta property="og:title" content="Academic Tools | Ahmet Bahadır Şimşek">
+<meta property="og:description" content="Ahmet Bahadır Şimşek — academic Python tools running in the browser on GitHub Pages.">
+<meta property="og:url" content="https://abahadirsimsek.github.io/en/tools.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Academic Tools | Ahmet Bahadır Şimşek">
+<meta name="twitter:description" content="Ahmet Bahadır Şimşek — academic Python tools running in the browser on GitHub Pages.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="identity" href="index.html">
+      <span class="identity-name">Ahmet Bahadır Şimşek</span>
+      <span class="identity-role">Associate Professor · Health Care Management</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#profile">Profile</a>
+<a href="index.html#research">Research</a>
+<a href="publications.html">Publications</a>
+<a href="tools.html">Tools</a>
+<a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="lang-link" href="../tools.html" hreflang="tr">TR</a>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero compact">
+  <div class="shell">
+    <p class="eyebrow">Python · PyScript</p>
+    <h1>Academic tools</h1>
+    <p class="lead narrow">
+      Calculations run directly in your browser. Data entered here is not sent by this site to a server.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="shell tool-shell">
+    <article class="tool-panel" id="descriptive">
+      <div class="tool-heading">
+        <div>
+          <span class="tool-tag">Tool 01</span>
+          <h2>Basic descriptive statistics</h2>
+        </div>
+        <span class="python-badge">Python</span>
+      </div>
+      <p>Separate values with commas, semicolons, spaces, or line breaks. Use a period as the decimal separator.</p>
+      <label class="field-label" for="data-input">Data</label>
+      <textarea id="data-input" placeholder="12, 15, 18, 21, 22"></textarea>
+      <div class="tool-actions">
+        <button id="calculate" class="button primary" type="button">Calculate</button>
+        <button id="example" class="button ghost" type="button">Example data</button>
+        <button id="clear" class="button ghost" type="button">Clear</button>
+      </div>
+      <div id="result" class="result" aria-live="polite">Results will appear here.</div>
+    </article>
+    <p class="bibliography-note">
+      This tool is intended for teaching and quick checks. Appropriate statistical assumptions should be assessed separately for research reporting.
+    </p>
+  </div>
+</section>
+<script type="py" src="../tools.py"></script>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <span>© <span id="year">2026</span> Ahmet Bahadır Şimşek</span>
+    <span>Published with GitHub Pages.</span>
+  </div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

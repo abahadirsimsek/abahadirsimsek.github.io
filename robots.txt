@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abahadirsimsek.github.io/sitemap.xml
