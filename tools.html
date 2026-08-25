@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Abahadır Şimşek — tarayıcıda çalışan akademik Python araçları.">
+  <title>Akademik Araçlar | Abahadır Şimşek</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- Python yalnızca bu sayfada yüklenir. -->
+  <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+  <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Abahadır Şimşek</span>
+        <span class="brand-role">Akademik Araçlar</span>
+      </a>
+      <nav class="nav" aria-label="Araçlar menüsü">
+        <a href="index.html">Ana sayfa</a>
+        <a href="#betimsel">Betimsel istatistik</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container tool-shell">
+      <p class="section-kicker">Python · Tarayıcı içi</p>
+      <h1 style="font-size:clamp(2.3rem,5vw,4rem)">Akademik Araçlar</h1>
+      <p class="lead" style="margin-bottom:34px">
+        Bu sayfadaki hesaplama tarayıcınızda çalışır. Girdiğiniz veri bir sunucuya gönderilmez.
+      </p>
+
+      <section id="betimsel" class="tool-panel">
+        <h2 style="font-size:1.75rem">Temel betimsel istatistik</h2>
+        <p>
+          Sayıları virgül, noktalı virgül, boşluk veya satır sonu ile ayırabilirsiniz.
+          Örnek: <code>12, 15, 18, 21, 22</code>
+        </p>
+
+        <label class="field-label" for="data-input">Veri</label>
+        <textarea id="data-input" placeholder="12, 15, 18, 21, 22"></textarea>
+
+        <div class="tool-actions">
+          <button id="calculate" class="button primary" type="button">Hesapla</button>
+          <button id="example" class="button" type="button">Örnek veri</button>
+          <button id="clear" class="button" type="button">Temizle</button>
+        </div>
+
+        <div id="result" class="result" aria-live="polite">
+          Sonuçlar burada görünecek.
+        </div>
+      </section>
+
+      <p style="margin-top:20px;color:var(--muted);font-size:.9rem">
+        Not: Bu araç öğretim ve hızlı kontrol amaçlıdır. Araştırma raporlamasında analiz varsayımları ayrıca değerlendirilmelidir.
+      </p>
+    </div>
+
+    <script type="py" src="./tools.py"></script>
+  </main>
+</body>
+</html>
