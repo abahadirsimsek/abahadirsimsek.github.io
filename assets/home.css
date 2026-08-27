@@ -66,18 +66,18 @@
 .home-page .hero h1 {
   max-width: 760px;
   color: var(--home-text);
-  font-size: clamp(2.75rem, 5vw, 4.85rem);
-  line-height: 1.02;
-  letter-spacing: -.04em;
+  font-size: clamp(2.6rem, 4.4vw, 4.1rem);
+  line-height: 1.04;
+  letter-spacing: -.038em;
   font-weight: 650;
 }
 
 .home-page .lead {
   max-width: 690px;
-  margin-top: 30px;
+  margin-top: 28px;
   color: #435477;
-  font-size: clamp(1rem, 1.25vw, 1.12rem);
-  line-height: 1.72;
+  font-size: clamp(.96rem, 1.1vw, 1.02rem);
+  line-height: 1.62;
 }
 
 .home-page .hero-actions { margin-top: 28px; gap: 14px; }
@@ -285,8 +285,8 @@
   .home-page .nav { gap: 15px; }
   .home-page .nav a { font-size: .82rem; }
   .home-page .hero { padding: 52px 0 48px; }
-  .home-page .hero h1 { font-size: clamp(2.35rem, 12vw, 3.6rem); }
-  .home-page .lead { margin-top: 24px; }
+  .home-page .hero h1 { font-size: clamp(2.25rem, 11vw, 3.2rem); }
+  .home-page .lead { margin-top: 22px; }
   .home-page .section { padding: 48px 0; }
   .home-page .section-head { align-items: flex-start; }
   .home-page .featured-item {
