@@ -132,40 +132,43 @@
 .home-page .profile-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 8 / 3;
+  height: 108px;
   object-fit: cover;
-  object-position: center 34%;
+  object-position: center 31%;
   border-bottom: 1px solid var(--home-line);
 }
 
 .home-page .facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 16px;
   margin: 0;
-  padding: 1px 18px 6px;
+  padding: 0 16px 8px;
 }
 
 .home-page .facts > div {
-  display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 14px;
-  align-items: center;
-  padding: 7px 0;
+  display: block;
+  min-width: 0;
+  padding: 8px 0 7px;
   border-top: 1px solid var(--home-line);
 }
-.home-page .facts > div:first-child { border-top: 0; }
+.home-page .facts > div:nth-child(-n+2) { border-top: 0; }
 
 .home-page .facts dt {
   color: #71809a;
-  font-size: .74rem;
+  font-size: .68rem;
   text-transform: none;
   letter-spacing: 0;
   font-weight: 600;
+  line-height: 1.2;
 }
 .home-page .facts dd {
-  margin: 0;
+  margin: 2px 0 0;
   color: #263e67;
-  font-size: .84rem;
+  font-size: .78rem;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.22;
+  overflow-wrap: anywhere;
 }
 
 .home-page .section { padding: 62px 0; }
@@ -293,5 +296,4 @@
   .home-page .type-badge { display: none; }
   .home-page .contact-grid { grid-template-columns: 1fr; }
   .home-page .tools-banner { flex-direction: column; gap: 26px; }
-  .home-page .facts > div { grid-template-columns: 80px minmax(0,1fr); }
 }
