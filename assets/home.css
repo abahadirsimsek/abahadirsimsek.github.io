@@ -58,7 +58,7 @@
 }
 
 .home-page .hero-grid {
-  grid-template-columns: minmax(0, 1fr) 290px;
+  grid-template-columns: minmax(0, 1.42fr) minmax(320px, .68fr);
   gap: clamp(42px, 7vw, 82px);
   align-items: center;
 }
@@ -121,8 +121,6 @@
 
 .home-page .profile-aside {
   width: 100%;
-  max-width: 290px;
-  justify-self: end;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--home-line);
@@ -134,15 +132,15 @@
 .home-page .profile-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  object-position: center 36%;
+  object-position: center 34%;
   border-bottom: 1px solid var(--home-line);
 }
 
 .home-page .facts {
   margin: 0;
-  padding: 4px 20px 14px;
+  padding: 4px 20px 10px;
 }
 
 .home-page .facts > div {
@@ -150,7 +148,7 @@
   grid-template-columns: 92px minmax(0, 1fr);
   gap: 16px;
   align-items: center;
-  padding: 15px 0;
+  padding: 12px 0;
   border-top: 1px solid var(--home-line);
 }
 .home-page .facts > div:first-child { border-top: 0; }
@@ -271,7 +269,7 @@
 @media (max-width: 900px) {
   .home-page .hero-grid { grid-template-columns: 1fr; gap: 38px; }
   .home-page .profile-aside {
-    max-width: 320px;
+    max-width: 430px;
     justify-self: start;
   }
   .home-page .split { grid-template-columns: 1fr; gap: 26px; }
