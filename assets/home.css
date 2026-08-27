@@ -132,7 +132,7 @@
 .home-page .profile-photo {
   display: block;
   width: 100%;
-  aspect-ratio: 21 / 9;
+  aspect-ratio: 8 / 3;
   object-fit: cover;
   object-position: center 34%;
   border-bottom: 1px solid var(--home-line);
@@ -140,7 +140,7 @@
 
 .home-page .facts {
   margin: 0;
-  padding: 2px 18px 8px;
+  padding: 1px 18px 6px;
 }
 
 .home-page .facts > div {
@@ -148,7 +148,7 @@
   grid-template-columns: 92px minmax(0, 1fr);
   gap: 14px;
   align-items: center;
-  padding: 9px 0;
+  padding: 7px 0;
   border-top: 1px solid var(--home-line);
 }
 .home-page .facts > div:first-child { border-top: 0; }
