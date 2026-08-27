@@ -6,6 +6,9 @@
 
   document.body.classList.add("subpage");
 
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+  if (themeMeta) themeMeta.setAttribute("content", "#ffffff");
+
   const script = document.currentScript;
   const stylesheetUrl = script
     ? new URL("subpages.css", script.src).href
